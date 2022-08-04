@@ -68,7 +68,7 @@ resource "azurerm_virtual_machine" "main" {
 }
 
 resource "azurerm_virtual_machine" "main2" {
-  name                  = "${var.prefix2}-azure-vm"
+  name                  = "${var.prefix}-azure-vm2"
   location              = "${azurerm_resource_group.main.location}"
   resource_group_name   = "${azurerm_resource_group.main.name}"
   network_interface_ids = ["${azurerm_network_interface.main.id}"]
@@ -88,7 +88,7 @@ resource "azurerm_virtual_machine" "main2" {
     version   = "${var.image_version}"
   }
   storage_os_disk {
-    name              = "${var.prefix2}-osdisk"
+    name              = "${var.prefix}-osdisk"
     caching           = "ReadWrite"
     create_option     = "FromImage"
     managed_disk_type = "Standard_LRS"
@@ -106,7 +106,7 @@ resource "azurerm_virtual_machine" "main2" {
   }
 }
 resource "azurerm_virtual_machine" "main3" {
-  name                  = "${var.prefix3}-azure-vm"
+  name                  = "${var.prefix}-azure-vm3"
   location              = "${azurerm_resource_group.main.location}"
   resource_group_name   = "${azurerm_resource_group.main.name}"
   network_interface_ids = ["${azurerm_network_interface.main.id}"]
@@ -126,7 +126,7 @@ resource "azurerm_virtual_machine" "main3" {
     version   = "${var.image_version}"
   }
   storage_os_disk {
-    name              = "${var.prefix3}-osdisk"
+    name              = "${var.prefix}-osdisk"
     caching           = "ReadWrite"
     create_option     = "FromImage"
     managed_disk_type = "Standard_LRS"
@@ -144,7 +144,7 @@ resource "azurerm_virtual_machine" "main3" {
   }
 }
 resource "azurerm_virtual_machine" "main4" {
-  name                  = "${var.prefix4}-azure-vm"
+  name                  = "${var.prefix}-azure-vm4"
   location              = "${azurerm_resource_group.main.location}"
   resource_group_name   = "${azurerm_resource_group.main.name}"
   network_interface_ids = ["${azurerm_network_interface.main.id}"]
@@ -164,7 +164,7 @@ resource "azurerm_virtual_machine" "main4" {
     version   = "${var.image_version}"
   }
   storage_os_disk {
-    name              = "${var.prefix4}-osdisk"
+    name              = "${var.prefix}-osdisk"
     caching           = "ReadWrite"
     create_option     = "FromImage"
     managed_disk_type = "Standard_LRS"
@@ -183,7 +183,7 @@ resource "azurerm_virtual_machine" "main4" {
 }
 
 resource "azurerm_virtual_machine" "main5" {
-  name                  = "${var.prefix5}-azure-vm"
+  name                  = "${var.prefix}-azure-vm5"
   location              = "${azurerm_resource_group.main.location}"
   resource_group_name   = "${azurerm_resource_group.main.name}"
   network_interface_ids = ["${azurerm_network_interface.main.id}"]
@@ -203,7 +203,7 @@ resource "azurerm_virtual_machine" "main5" {
     version   = "${var.image_version}"
   }
   storage_os_disk {
-    name              = "${var.prefix5}-osdisk"
+    name              = "${var.prefix}-osdisk"
     caching           = "ReadWrite"
     create_option     = "FromImage"
     managed_disk_type = "Standard_LRS"
@@ -222,7 +222,7 @@ resource "azurerm_virtual_machine" "main5" {
 }
 
 resource "azurerm_virtual_machine" "main6" {
-  name                  = "${var.prefix6}-azure-vm"
+  name                  = "${var.prefix}-azure-vm6"
   location              = "${azurerm_resource_group.main.location}"
   resource_group_name   = "${azurerm_resource_group.main.name}"
   network_interface_ids = ["${azurerm_network_interface.main.id}"]
@@ -242,7 +242,7 @@ resource "azurerm_virtual_machine" "main6" {
     version   = "${var.image_version}"
   }
   storage_os_disk {
-    name              = "${var.prefix6}-osdisk"
+    name              = "${var.prefix}-osdisk"
     caching           = "ReadWrite"
     create_option     = "FromImage"
     managed_disk_type = "Standard_LRS"
@@ -261,7 +261,7 @@ resource "azurerm_virtual_machine" "main6" {
 }
 
 resource "azurerm_virtual_machine" "main7" {
-  name                  = "${var.prefix7}-azure-vm"
+  name                  = "${var.prefix}-azure-vm7"
   location              = "${azurerm_resource_group.main.location}"
   resource_group_name   = "${azurerm_resource_group.main.name}"
   network_interface_ids = ["${azurerm_network_interface.main.id}"]
@@ -281,7 +281,7 @@ resource "azurerm_virtual_machine" "main7" {
     version   = "${var.image_version}"
   }
   storage_os_disk {
-    name              = "${var.prefix7}-osdisk"
+    name              = "${var.prefix}-osdisk"
     caching           = "ReadWrite"
     create_option     = "FromImage"
     managed_disk_type = "Standard_LRS"
@@ -311,7 +311,7 @@ resource "azurerm_public_ip" "test" {
 }
 
 resource "azurerm_virtual_machine" "main8" {
-  name                  = "${var.prefix8}-azure-vm"
+  name                  = "${var.prefix}-azure-vm8"
   location              = "${azurerm_resource_group.main.location}"
   resource_group_name   = "${azurerm_resource_group.main.name}"
   network_interface_ids = ["${azurerm_network_interface.main.id}"]
@@ -331,7 +331,7 @@ resource "azurerm_virtual_machine" "main8" {
     version   = "${var.image_version}"
   }
   storage_os_disk {
-    name              = "${var.prefix8}-osdisk"
+    name              = "${var.prefix}-osdisk"
     caching           = "ReadWrite"
     create_option     = "FromImage"
     managed_disk_type = "Standard_LRS"
@@ -349,7 +349,7 @@ resource "azurerm_virtual_machine" "main8" {
   }
 }
 resource "azurerm_virtual_machine" "main9" {
-  name                  = "${var.prefix9}-azure-vm"
+  name                  = "${var.prefix}-azure-vm9"
   location              = "${azurerm_resource_group.main.location}"
   resource_group_name   = "${azurerm_resource_group.main.name}"
   network_interface_ids = ["${azurerm_network_interface.main.id}"]
@@ -369,7 +369,7 @@ resource "azurerm_virtual_machine" "main9" {
     version   = "${var.image_version}"
   }
   storage_os_disk {
-    name              = "${var.prefix9}-osdisk"
+    name              = "${var.prefix}-osdisk"
     caching           = "ReadWrite"
     create_option     = "FromImage"
     managed_disk_type = "Standard_LRS"
@@ -387,7 +387,7 @@ resource "azurerm_virtual_machine" "main9" {
   }
 }
 resource "azurerm_virtual_machine" "main10" {
-  name                  = "${var.prefix10}-azure-vm"
+  name                  = "${var.prefix}-azure-vm10"
   location              = "${azurerm_resource_group.main.location}"
   resource_group_name   = "${azurerm_resource_group.main.name}"
   network_interface_ids = ["${azurerm_network_interface.main.id}"]
@@ -407,7 +407,7 @@ resource "azurerm_virtual_machine" "main10" {
     version   = "${var.image_version}"
   }
   storage_os_disk {
-    name              = "${var.prefix10}-osdisk"
+    name              = "${var.prefix}-osdisk"
     caching           = "ReadWrite"
     create_option     = "FromImage"
     managed_disk_type = "Standard_LRS"
@@ -425,7 +425,7 @@ resource "azurerm_virtual_machine" "main10" {
   }
 }
 resource "azurerm_virtual_machine" "main11" {
-  name                  = "${var.prefix11}-azure-vm"
+  name                  = "${var.prefix}-azure-vm11"
   location              = "${azurerm_resource_group.main.location}"
   resource_group_name   = "${azurerm_resource_group.main.name}"
   network_interface_ids = ["${azurerm_network_interface.main.id}"]
@@ -445,7 +445,7 @@ resource "azurerm_virtual_machine" "main11" {
     version   = "${var.image_version}"
   }
   storage_os_disk {
-    name              = "${var.prefix11}-osdisk"
+    name              = "${var.prefix}-osdisk"
     caching           = "ReadWrite"
     create_option     = "FromImage"
     managed_disk_type = "Standard_LRS"
@@ -463,7 +463,7 @@ resource "azurerm_virtual_machine" "main11" {
   }
 }
 resource "azurerm_virtual_machine" "main12" {
-  name                  = "${var.prefix12}-azure-vm"
+  name                  = "${var.prefix}-azure-vm12"
   location              = "${azurerm_resource_group.main.location}"
   resource_group_name   = "${azurerm_resource_group.main.name}"
   network_interface_ids = ["${azurerm_network_interface.main.id}"]
@@ -483,7 +483,7 @@ resource "azurerm_virtual_machine" "main12" {
     version   = "${var.image_version}"
   }
   storage_os_disk {
-    name              = "${var.prefix12}-osdisk"
+    name              = "${var.prefix}-osdisk"
     caching           = "ReadWrite"
     create_option     = "FromImage"
     managed_disk_type = "Standard_LRS"
@@ -502,7 +502,7 @@ resource "azurerm_virtual_machine" "main12" {
 }
 
 resource "azurerm_virtual_machine" "main13" {
-  name                  = "${var.prefix13}-azure-vm"
+  name                  = "${var.prefix}-azure-vm13"
   location              = "${azurerm_resource_group.main.location}"
   resource_group_name   = "${azurerm_resource_group.main.name}"
   network_interface_ids = ["${azurerm_network_interface.main.id}"]
@@ -522,7 +522,7 @@ resource "azurerm_virtual_machine" "main13" {
     version   = "${var.image_version}"
   }
   storage_os_disk {
-    name              = "${var.prefix13}-osdisk"
+    name              = "${var.prefix}-osdisk"
     caching           = "ReadWrite"
     create_option     = "FromImage"
     managed_disk_type = "Standard_LRS"
@@ -541,7 +541,7 @@ resource "azurerm_virtual_machine" "main13" {
 }
 
 resource "azurerm_virtual_machine" "main14" {
-  name                  = "${var.prefix14}-azure-vm"
+  name                  = "${var.prefix}-azure-vm14"
   location              = "${azurerm_resource_group.main.location}"
   resource_group_name   = "${azurerm_resource_group.main.name}"
   network_interface_ids = ["${azurerm_network_interface.main.id}"]
@@ -561,7 +561,7 @@ resource "azurerm_virtual_machine" "main14" {
     version   = "${var.image_version}"
   }
   storage_os_disk {
-    name              = "${var.prefix14}-osdisk"
+    name              = "${var.prefix}-osdisk"
     caching           = "ReadWrite"
     create_option     = "FromImage"
     managed_disk_type = "Standard_LRS"
@@ -580,7 +580,7 @@ resource "azurerm_virtual_machine" "main14" {
 }
 
 resource "azurerm_virtual_machine" "main15" {
-  name                  = "${var.prefix15}-azure-vm"
+  name                  = "${var.prefix}-azure-vm15"
   location              = "${azurerm_resource_group.main.location}"
   resource_group_name   = "${azurerm_resource_group.main.name}"
   network_interface_ids = ["${azurerm_network_interface.main.id}"]
@@ -600,7 +600,7 @@ resource "azurerm_virtual_machine" "main15" {
     version   = "${var.image_version}"
   }
   storage_os_disk {
-    name              = "${var.prefix15}-osdisk"
+    name              = "${var.prefix}-osdisk"
     caching           = "ReadWrite"
     create_option     = "FromImage"
     managed_disk_type = "Standard_LRS"
@@ -619,7 +619,7 @@ resource "azurerm_virtual_machine" "main15" {
 }
 
 resource "azurerm_virtual_machine" "main16" {
-  name                  = "${var.prefix16}-azure-vm"
+  name                  = "${var.prefix}-azure-vm16"
   location              = "${azurerm_resource_group.main.location}"
   resource_group_name   = "${azurerm_resource_group.main.name}"
   network_interface_ids = ["${azurerm_network_interface.main.id}"]
@@ -639,7 +639,7 @@ resource "azurerm_virtual_machine" "main16" {
     version   = "${var.image_version}"
   }
   storage_os_disk {
-    name              = "${var.prefix16}-osdisk"
+    name              = "${var.prefix}-osdisk"
     caching           = "ReadWrite"
     create_option     = "FromImage"
     managed_disk_type = "Standard_LRS"
@@ -658,7 +658,7 @@ resource "azurerm_virtual_machine" "main16" {
 }
 
 resource "azurerm_virtual_machine" "main17" {
-  name                  = "${var.prefix17}-azure-vm"
+  name                  = "${var.prefix}-azure-vm17"
   location              = "${azurerm_resource_group.main.location}"
   resource_group_name   = "${azurerm_resource_group.main.name}"
   network_interface_ids = ["${azurerm_network_interface.main.id}"]
@@ -678,7 +678,7 @@ resource "azurerm_virtual_machine" "main17" {
     version   = "${var.image_version}"
   }
   storage_os_disk {
-    name              = "${var.prefix17}-osdisk"
+    name              = "${var.prefix}-osdisk"
     caching           = "ReadWrite"
     create_option     = "FromImage"
     managed_disk_type = "Standard_LRS"
@@ -696,7 +696,7 @@ resource "azurerm_virtual_machine" "main17" {
   }
 }
 resource "azurerm_virtual_machine" "main18" {
-  name                  = "${var.prefix18}-azure-vm"
+  name                  = "${var.prefix}-azure-vm18"
   location              = "${azurerm_resource_group.main.location}"
   resource_group_name   = "${azurerm_resource_group.main.name}"
   network_interface_ids = ["${azurerm_network_interface.main.id}"]
@@ -716,7 +716,7 @@ resource "azurerm_virtual_machine" "main18" {
     version   = "${var.image_version}"
   }
   storage_os_disk {
-    name              = "${var.prefix18}-osdisk"
+    name              = "${var.prefix}-osdisk"
     caching           = "ReadWrite"
     create_option     = "FromImage"
     managed_disk_type = "Standard_LRS"
@@ -735,7 +735,7 @@ resource "azurerm_virtual_machine" "main18" {
 }
 
 resource "azurerm_virtual_machine" "main19" {
-  name                  = "${var.prefix19}-azure-vm"
+  name                  = "${var.prefix}-azure-vm19"
   location              = "${azurerm_resource_group.main.location}"
   resource_group_name   = "${azurerm_resource_group.main.name}"
   network_interface_ids = ["${azurerm_network_interface.main.id}"]
@@ -755,7 +755,7 @@ resource "azurerm_virtual_machine" "main19" {
     version   = "${var.image_version}"
   }
   storage_os_disk {
-    name              = "${var.prefix19}-osdisk"
+    name              = "${var.prefix}-osdisk"
     caching           = "ReadWrite"
     create_option     = "FromImage"
     managed_disk_type = "Standard_LRS"
@@ -774,7 +774,7 @@ resource "azurerm_virtual_machine" "main19" {
 }
 
 resource "azurerm_virtual_machine" "main20" {
-  name                  = "${var.prefix20}-azure-vm"
+  name                  = "${var.prefix}-azure-vm20"
   location              = "${azurerm_resource_group.main.location}"
   resource_group_name   = "${azurerm_resource_group.main.name}"
   network_interface_ids = ["${azurerm_network_interface.main.id}"]
@@ -794,7 +794,7 @@ resource "azurerm_virtual_machine" "main20" {
     version   = "${var.image_version}"
   }
   storage_os_disk {
-    name              = "${var.prefix20}-osdisk"
+    name              = "${var.prefix}-osdisk"
     caching           = "ReadWrite"
     create_option     = "FromImage"
     managed_disk_type = "Standard_LRS"
