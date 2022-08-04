@@ -1046,3 +1046,383 @@ resource "azurerm_virtual_machine_data_disk_attachment" "example" {
   lun                = "10"
   caching            = "ReadWrite"
 }
+
+resource "azurerm_managed_disk" "example2" {
+  name                 = "${var.prefix}-azure-vm-disk2"
+  location             = "${azurerm_resource_group.main.location}"
+  resource_group_name  = "${azurerm_resource_group.main.name}"
+  storage_account_type = "Standard_LRS"
+  create_option        = "Empty"
+  disk_size_gb         = "${var.diskSizeInGB}"
+
+ tags = {
+    environment = "${var.environment}"
+  }
+}
+
+resource "azurerm_virtual_machine_data_disk_attachment" "example2" {
+  managed_disk_id    = "${azurerm_managed_disk.example2.id}"
+  virtual_machine_id = "${azurerm_virtual_machine.main2.id}"
+  lun                = "10"
+  caching            = "ReadWrite"
+}
+
+resource "azurerm_managed_disk" "example3" {
+  name                 = "${var.prefix}-azure-vm-disk3"
+  location             = "${azurerm_resource_group.main.location}"
+  resource_group_name  = "${azurerm_resource_group.main.name}"
+  storage_account_type = "Standard_LRS"
+  create_option        = "Empty"
+  disk_size_gb         = "${var.diskSizeInGB}"
+
+ tags = {
+    environment = "${var.environment}"
+  }
+}
+
+resource "azurerm_virtual_machine_data_disk_attachment" "example3" {
+  managed_disk_id    = "${azurerm_managed_disk.example3.id}"
+  virtual_machine_id = "${azurerm_virtual_machine.main3.id}"
+  lun                = "10"
+  caching            = "ReadWrite"
+}
+
+resource "azurerm_managed_disk" "example4" {
+  name                 = "${var.prefix}-azure-vm-disk4"
+  location             = "${azurerm_resource_group.main.location}"
+  resource_group_name  = "${azurerm_resource_group.main.name}"
+  storage_account_type = "Standard_LRS"
+  create_option        = "Empty"
+  disk_size_gb         = "${var.diskSizeInGB}"
+
+ tags = {
+    environment = "${var.environment}"
+  }
+}
+
+resource "azurerm_virtual_machine_data_disk_attachment" "example4" {
+  managed_disk_id    = "${azurerm_managed_disk.example4.id}"
+  virtual_machine_id = "${azurerm_virtual_machine.main4.id}"
+  lun                = "10"
+  caching            = "ReadWrite"
+}
+
+resource "azurerm_managed_disk" "example5" {
+  name                 = "${var.prefix}-azure-vm-disk5"
+  location             = "${azurerm_resource_group.main.location}"
+  resource_group_name  = "${azurerm_resource_group.main.name}"
+  storage_account_type = "Standard_LRS"
+  create_option        = "Empty"
+  disk_size_gb         = "${var.diskSizeInGB}"
+
+ tags = {
+    environment = "${var.environment}"
+  }
+}
+
+resource "azurerm_virtual_machine_data_disk_attachment" "example5" {
+  managed_disk_id    = "${azurerm_managed_disk.example5.id}"
+  virtual_machine_id = "${azurerm_virtual_machine.main5.id}"
+  lun                = "10"
+  caching            = "ReadWrite"
+}
+
+resource "azurerm_managed_disk" "example6" {
+  name                 = "${var.prefix}-azure-vm-disk6"
+  location             = "${azurerm_resource_group.main.location}"
+  resource_group_name  = "${azurerm_resource_group.main.name}"
+  storage_account_type = "Standard_LRS"
+  create_option        = "Empty"
+  disk_size_gb         = "${var.diskSizeInGB}"
+
+ tags = {
+    environment = "${var.environment}"
+  }
+}
+
+resource "azurerm_virtual_machine_data_disk_attachment" "example6" {
+  managed_disk_id    = "${azurerm_managed_disk.example6.id}"
+  virtual_machine_id = "${azurerm_virtual_machine.main6.id}"
+  lun                = "10"
+  caching            = "ReadWrite"
+}
+
+resource "azurerm_managed_disk" "example7" {
+  name                 = "${var.prefix}-azure-vm-disk7"
+  location             = "${azurerm_resource_group.main.location}"
+  resource_group_name  = "${azurerm_resource_group.main.name}"
+  storage_account_type = "Standard_LRS"
+  create_option        = "Empty"
+  disk_size_gb         = "${var.diskSizeInGB}"
+
+ tags = {
+    environment = "${var.environment}"
+  }
+}
+
+resource "azurerm_virtual_machine_data_disk_attachment" "example7" {
+  managed_disk_id    = "${azurerm_managed_disk.example7.id}"
+  virtual_machine_id = "${azurerm_virtual_machine.main7.id}"
+  lun                = "10"
+  caching            = "ReadWrite"
+}
+
+resource "azurerm_managed_disk" "example8" {
+  name                 = "${var.prefix}-azure-vm-disk8"
+  location             = "${azurerm_resource_group.main.location}"
+  resource_group_name  = "${azurerm_resource_group.main.name}"
+  storage_account_type = "Standard_LRS"
+  create_option        = "Empty"
+  disk_size_gb         = "${var.diskSizeInGB}"
+
+ tags = {
+    environment = "${var.environment}"
+  }
+}
+
+resource "azurerm_virtual_machine_data_disk_attachment" "example8" {
+  managed_disk_id    = "${azurerm_managed_disk.example8.id}"
+  virtual_machine_id = "${azurerm_virtual_machine.main8.id}"
+  lun                = "10"
+  caching            = "ReadWrite"
+}
+
+resource "azurerm_managed_disk" "example9" {
+  name                 = "${var.prefix}-azure-vm-disk9"
+  location             = "${azurerm_resource_group.main.location}"
+  resource_group_name  = "${azurerm_resource_group.main.name}"
+  storage_account_type = "Standard_LRS"
+  create_option        = "Empty"
+  disk_size_gb         = "${var.diskSizeInGB}"
+
+ tags = {
+    environment = "${var.environment}"
+  }
+}
+
+resource "azurerm_virtual_machine_data_disk_attachment" "example9" {
+  managed_disk_id    = "${azurerm_managed_disk.example9.id}"
+  virtual_machine_id = "${azurerm_virtual_machine.main9.id}"
+  lun                = "10"
+  caching            = "ReadWrite"
+}
+
+resource "azurerm_managed_disk" "example10" {
+  name                 = "${var.prefix}-azure-vm-disk10"
+  location             = "${azurerm_resource_group.main.location}"
+  resource_group_name  = "${azurerm_resource_group.main.name}"
+  storage_account_type = "Standard_LRS"
+  create_option        = "Empty"
+  disk_size_gb         = "${var.diskSizeInGB}"
+
+ tags = {
+    environment = "${var.environment}"
+  }
+}
+
+resource "azurerm_virtual_machine_data_disk_attachment" "example10" {
+  managed_disk_id    = "${azurerm_managed_disk.example10.id}"
+  virtual_machine_id = "${azurerm_virtual_machine.main10.id}"
+  lun                = "10"
+  caching            = "ReadWrite"
+}
+
+resource "azurerm_managed_disk" "example11" {
+  name                 = "${var.prefix}-azure-vm-disk11"
+  location             = "${azurerm_resource_group.main.location}"
+  resource_group_name  = "${azurerm_resource_group.main.name}"
+  storage_account_type = "Standard_LRS"
+  create_option        = "Empty"
+  disk_size_gb         = "${var.diskSizeInGB}"
+
+ tags = {
+    environment = "${var.environment}"
+  }
+}
+
+resource "azurerm_virtual_machine_data_disk_attachment" "example11" {
+  managed_disk_id    = "${azurerm_managed_disk.example11.id}"
+  virtual_machine_id = "${azurerm_virtual_machine.main11.id}"
+  lun                = "10"
+  caching            = "ReadWrite"
+}
+
+resource "azurerm_managed_disk" "example12" {
+  name                 = "${var.prefix}-azure-vm-disk12"
+  location             = "${azurerm_resource_group.main.location}"
+  resource_group_name  = "${azurerm_resource_group.main.name}"
+  storage_account_type = "Standard_LRS"
+  create_option        = "Empty"
+  disk_size_gb         = "${var.diskSizeInGB}"
+
+ tags = {
+    environment = "${var.environment}"
+  }
+}
+
+resource "azurerm_virtual_machine_data_disk_attachment" "example12" {
+  managed_disk_id    = "${azurerm_managed_disk.example12.id}"
+  virtual_machine_id = "${azurerm_virtual_machine.main12.id}"
+  lun                = "10"
+  caching            = "ReadWrite"
+}
+
+resource "azurerm_managed_disk" "example13" {
+  name                 = "${var.prefix}-azure-vm-disk13"
+  location             = "${azurerm_resource_group.main.location}"
+  resource_group_name  = "${azurerm_resource_group.main.name}"
+  storage_account_type = "Standard_LRS"
+  create_option        = "Empty"
+  disk_size_gb         = "${var.diskSizeInGB}"
+
+ tags = {
+    environment = "${var.environment}"
+  }
+}
+
+resource "azurerm_virtual_machine_data_disk_attachment" "example13" {
+  managed_disk_id    = "${azurerm_managed_disk.example13.id}"
+  virtual_machine_id = "${azurerm_virtual_machine.main13.id}"
+  lun                = "10"
+  caching            = "ReadWrite"
+}
+
+resource "azurerm_managed_disk" "example14" {
+  name                 = "${var.prefix}-azure-vm-disk14"
+  location             = "${azurerm_resource_group.main.location}"
+  resource_group_name  = "${azurerm_resource_group.main.name}"
+  storage_account_type = "Standard_LRS"
+  create_option        = "Empty"
+  disk_size_gb         = "${var.diskSizeInGB}"
+
+ tags = {
+    environment = "${var.environment}"
+  }
+}
+
+resource "azurerm_virtual_machine_data_disk_attachment" "example14" {
+  managed_disk_id    = "${azurerm_managed_disk.example14.id}"
+  virtual_machine_id = "${azurerm_virtual_machine.main14.id}"
+  lun                = "10"
+  caching            = "ReadWrite"
+}
+
+resource "azurerm_managed_disk" "example15" {
+  name                 = "${var.prefix}-azure-vm-disk15"
+  location             = "${azurerm_resource_group.main.location}"
+  resource_group_name  = "${azurerm_resource_group.main.name}"
+  storage_account_type = "Standard_LRS"
+  create_option        = "Empty"
+  disk_size_gb         = "${var.diskSizeInGB}"
+
+ tags = {
+    environment = "${var.environment}"
+  }
+}
+
+resource "azurerm_virtual_machine_data_disk_attachment" "example15" {
+  managed_disk_id    = "${azurerm_managed_disk.example15.id}"
+  virtual_machine_id = "${azurerm_virtual_machine.main15.id}"
+  lun                = "10"
+  caching            = "ReadWrite"
+}
+
+resource "azurerm_managed_disk" "example16" {
+  name                 = "${var.prefix}-azure-vm-disk16"
+  location             = "${azurerm_resource_group.main.location}"
+  resource_group_name  = "${azurerm_resource_group.main.name}"
+  storage_account_type = "Standard_LRS"
+  create_option        = "Empty"
+  disk_size_gb         = "${var.diskSizeInGB}"
+
+ tags = {
+    environment = "${var.environment}"
+  }
+}
+
+resource "azurerm_virtual_machine_data_disk_attachment" "example16" {
+  managed_disk_id    = "${azurerm_managed_disk.example16.id}"
+  virtual_machine_id = "${azurerm_virtual_machine.main16.id}"
+  lun                = "10"
+  caching            = "ReadWrite"
+}
+
+resource "azurerm_managed_disk" "example17" {
+  name                 = "${var.prefix}-azure-vm-disk17"
+  location             = "${azurerm_resource_group.main.location}"
+  resource_group_name  = "${azurerm_resource_group.main.name}"
+  storage_account_type = "Standard_LRS"
+  create_option        = "Empty"
+  disk_size_gb         = "${var.diskSizeInGB}"
+
+ tags = {
+    environment = "${var.environment}"
+  }
+}
+
+resource "azurerm_virtual_machine_data_disk_attachment" "example17" {
+  managed_disk_id    = "${azurerm_managed_disk.example17.id}"
+  virtual_machine_id = "${azurerm_virtual_machine.main17.id}"
+  lun                = "10"
+  caching            = "ReadWrite"
+}
+
+resource "azurerm_managed_disk" "example18" {
+  name                 = "${var.prefix}-azure-vm-disk18"
+  location             = "${azurerm_resource_group.main.location}"
+  resource_group_name  = "${azurerm_resource_group.main.name}"
+  storage_account_type = "Standard_LRS"
+  create_option        = "Empty"
+  disk_size_gb         = "${var.diskSizeInGB}"
+
+ tags = {
+    environment = "${var.environment}"
+  }
+}
+
+resource "azurerm_virtual_machine_data_disk_attachment" "example18" {
+  managed_disk_id    = "${azurerm_managed_disk.example18.id}"
+  virtual_machine_id = "${azurerm_virtual_machine.main18.id}"
+  lun                = "10"
+  caching            = "ReadWrite"
+}
+
+resource "azurerm_managed_disk" "example19" {
+  name                 = "${var.prefix}-azure-vm-disk19"
+  location             = "${azurerm_resource_group.main.location}"
+  resource_group_name  = "${azurerm_resource_group.main.name}"
+  storage_account_type = "Standard_LRS"
+  create_option        = "Empty"
+  disk_size_gb         = "${var.diskSizeInGB}"
+
+ tags = {
+    environment = "${var.environment}"
+  }
+}
+
+resource "azurerm_virtual_machine_data_disk_attachment" "example19" {
+  managed_disk_id    = "${azurerm_managed_disk.example19.id}"
+  virtual_machine_id = "${azurerm_virtual_machine.main19.id}"
+  lun                = "10"
+  caching            = "ReadWrite"
+}
+
+resource "azurerm_managed_disk" "example20" {
+  name                 = "${var.prefix}-azure-vm-disk20"
+  location             = "${azurerm_resource_group.main.location}"
+  resource_group_name  = "${azurerm_resource_group.main.name}"
+  storage_account_type = "Standard_LRS"
+  create_option        = "Empty"
+  disk_size_gb         = "${var.diskSizeInGB}"
+
+ tags = {
+    environment = "${var.environment}"
+  }
+}
+
+resource "azurerm_virtual_machine_data_disk_attachment" "example20" {
+  managed_disk_id    = "${azurerm_managed_disk.example20.id}"
+  virtual_machine_id = "${azurerm_virtual_machine.main20.id}"
+  lun                = "10"
+  caching            = "ReadWrite"
+}
