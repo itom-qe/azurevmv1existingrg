@@ -302,7 +302,7 @@ resource "azurerm_virtual_machine" "main2" {
     version   = "${var.image_version}"
   }
   storage_os_disk {
-    name              = "${var.prefix}-osdisk"
+    name              = "${var.prefix}-osdisk2"
     caching           = "ReadWrite"
     create_option     = "FromImage"
     managed_disk_type = "Standard_LRS"
@@ -340,7 +340,7 @@ resource "azurerm_virtual_machine" "main3" {
     version   = "${var.image_version}"
   }
   storage_os_disk {
-    name              = "${var.prefix}-osdisk"
+    name              = "${var.prefix}-osdisk3"
     caching           = "ReadWrite"
     create_option     = "FromImage"
     managed_disk_type = "Standard_LRS"
@@ -378,7 +378,7 @@ resource "azurerm_virtual_machine" "main4" {
     version   = "${var.image_version}"
   }
   storage_os_disk {
-    name              = "${var.prefix}-osdisk"
+    name              = "${var.prefix}-osdisk4"
     caching           = "ReadWrite"
     create_option     = "FromImage"
     managed_disk_type = "Standard_LRS"
@@ -417,7 +417,7 @@ resource "azurerm_virtual_machine" "main5" {
     version   = "${var.image_version}"
   }
   storage_os_disk {
-    name              = "${var.prefix}-osdisk"
+    name              = "${var.prefix}-osdisk5"
     caching           = "ReadWrite"
     create_option     = "FromImage"
     managed_disk_type = "Standard_LRS"
@@ -456,7 +456,7 @@ resource "azurerm_virtual_machine" "main6" {
     version   = "${var.image_version}"
   }
   storage_os_disk {
-    name              = "${var.prefix}-osdisk"
+    name              = "${var.prefix}-osdisk6"
     caching           = "ReadWrite"
     create_option     = "FromImage"
     managed_disk_type = "Standard_LRS"
@@ -495,7 +495,7 @@ resource "azurerm_virtual_machine" "main7" {
     version   = "${var.image_version}"
   }
   storage_os_disk {
-    name              = "${var.prefix}-osdisk"
+    name              = "${var.prefix}-osdisk7"
     caching           = "ReadWrite"
     create_option     = "FromImage"
     managed_disk_type = "Standard_LRS"
@@ -545,7 +545,7 @@ resource "azurerm_virtual_machine" "main8" {
     version   = "${var.image_version}"
   }
   storage_os_disk {
-    name              = "${var.prefix}-osdisk"
+    name              = "${var.prefix}-osdisk8"
     caching           = "ReadWrite"
     create_option     = "FromImage"
     managed_disk_type = "Standard_LRS"
@@ -583,7 +583,7 @@ resource "azurerm_virtual_machine" "main9" {
     version   = "${var.image_version}"
   }
   storage_os_disk {
-    name              = "${var.prefix}-osdisk"
+    name              = "${var.prefix}-osdisk9"
     caching           = "ReadWrite"
     create_option     = "FromImage"
     managed_disk_type = "Standard_LRS"
@@ -621,7 +621,7 @@ resource "azurerm_virtual_machine" "main10" {
     version   = "${var.image_version}"
   }
   storage_os_disk {
-    name              = "${var.prefix}-osdisk"
+    name              = "${var.prefix}-osdisk10"
     caching           = "ReadWrite"
     create_option     = "FromImage"
     managed_disk_type = "Standard_LRS"
@@ -659,7 +659,7 @@ resource "azurerm_virtual_machine" "main11" {
     version   = "${var.image_version}"
   }
   storage_os_disk {
-    name              = "${var.prefix}-osdisk"
+    name              = "${var.prefix}-osdisk11"
     caching           = "ReadWrite"
     create_option     = "FromImage"
     managed_disk_type = "Standard_LRS"
@@ -697,7 +697,7 @@ resource "azurerm_virtual_machine" "main12" {
     version   = "${var.image_version}"
   }
   storage_os_disk {
-    name              = "${var.prefix}-osdisk"
+    name              = "${var.prefix}-osdisk12"
     caching           = "ReadWrite"
     create_option     = "FromImage"
     managed_disk_type = "Standard_LRS"
@@ -736,7 +736,7 @@ resource "azurerm_virtual_machine" "main13" {
     version   = "${var.image_version}"
   }
   storage_os_disk {
-    name              = "${var.prefix}-osdisk"
+    name              = "${var.prefix}-osdisk13"
     caching           = "ReadWrite"
     create_option     = "FromImage"
     managed_disk_type = "Standard_LRS"
@@ -775,7 +775,7 @@ resource "azurerm_virtual_machine" "main14" {
     version   = "${var.image_version}"
   }
   storage_os_disk {
-    name              = "${var.prefix}-osdisk"
+    name              = "${var.prefix}-osdisk14"
     caching           = "ReadWrite"
     create_option     = "FromImage"
     managed_disk_type = "Standard_LRS"
@@ -814,7 +814,7 @@ resource "azurerm_virtual_machine" "main15" {
     version   = "${var.image_version}"
   }
   storage_os_disk {
-    name              = "${var.prefix}-osdisk"
+    name              = "${var.prefix}-osdisk15"
     caching           = "ReadWrite"
     create_option     = "FromImage"
     managed_disk_type = "Standard_LRS"
@@ -853,7 +853,7 @@ resource "azurerm_virtual_machine" "main16" {
     version   = "${var.image_version}"
   }
   storage_os_disk {
-    name              = "${var.prefix}-osdisk"
+    name              = "${var.prefix}-osdisk16"
     caching           = "ReadWrite"
     create_option     = "FromImage"
     managed_disk_type = "Standard_LRS"
@@ -892,7 +892,7 @@ resource "azurerm_virtual_machine" "main17" {
     version   = "${var.image_version}"
   }
   storage_os_disk {
-    name              = "${var.prefix}-osdisk"
+    name              = "${var.prefix}-osdisk17"
     caching           = "ReadWrite"
     create_option     = "FromImage"
     managed_disk_type = "Standard_LRS"
@@ -930,7 +930,7 @@ resource "azurerm_virtual_machine" "main18" {
     version   = "${var.image_version}"
   }
   storage_os_disk {
-    name              = "${var.prefix}-osdisk"
+    name              = "${var.prefix}-osdisk18"
     caching           = "ReadWrite"
     create_option     = "FromImage"
     managed_disk_type = "Standard_LRS"
@@ -969,7 +969,7 @@ resource "azurerm_virtual_machine" "main19" {
     version   = "${var.image_version}"
   }
   storage_os_disk {
-    name              = "${var.prefix}-osdisk"
+    name              = "${var.prefix}-osdisk19"
     caching           = "ReadWrite"
     create_option     = "FromImage"
     managed_disk_type = "Standard_LRS"
@@ -1008,7 +1008,7 @@ resource "azurerm_virtual_machine" "main20" {
     version   = "${var.image_version}"
   }
   storage_os_disk {
-    name              = "${var.prefix}-osdisk"
+    name              = "${var.prefix}-osdisk20"
     caching           = "ReadWrite"
     create_option     = "FromImage"
     managed_disk_type = "Standard_LRS"
